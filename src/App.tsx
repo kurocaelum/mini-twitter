@@ -1,8 +1,10 @@
 import './App.css'
+import Login from './pages/Login'
 
 function App() {
 
-  return <h1 className="text-blue-steel">OHAYO SEKAI GOOD MORNING WORLD</h1>
+  return <Login></Login>;
+
 }
 
 export default App
