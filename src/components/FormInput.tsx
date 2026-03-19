@@ -21,7 +21,7 @@ export default function FormInput({
             </label>
             <input
                 id={inputId}
-                className="mt-2 p-4 w-full text-[16px] text-gray border rounded-2xl border-blue-steel3 bg-white"
+                className="mt-2 p-4 w-full text-[16px] text-gray border rounded-2xl border-blue-steel3 bg-white outline-blue"
                 type={inputType}
                 placeholder={placeholder}
             />
