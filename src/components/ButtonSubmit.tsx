@@ -2,12 +2,11 @@ interface Props {
     label: string;
 }
 
-function ButtonSubmit({label}: Props) {
+export default function ButtonSubmit({label}: Props) {
     return (
         <div>
-            <button className="w-120 h-14 rounded-full bg-blue text-white font-bold">{label}</button>
+            <button className="w-120 h-14 rounded-full bg-blue text-white font-bold cursor-pointer">{label}</button>
         </div>
     )
 }
 
-export default ButtonSubmit
