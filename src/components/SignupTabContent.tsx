@@ -12,7 +12,7 @@ export default function SignupTabContent() {
                 <FormInput label="E-mail" inputType="email" placeholder="Insira o seu e-mail"></FormInput>
                 <FormInput label="Senha" inputType="password" placeholder="Insira a sua senha"></FormInput>
 
-                <ButtonSubmit label="Continuar"></ButtonSubmit>
+                <ButtonSubmit label="Continuar" to="/"></ButtonSubmit>
             </form>
 
             <p className="mx-auto w-[320px] mt-10 text-[12px] text-navy text-center">

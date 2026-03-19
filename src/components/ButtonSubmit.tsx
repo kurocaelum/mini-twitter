@@ -1,12 +1,15 @@
+import { Link } from "react-router-dom";
+
 interface Props {
     label: string;
+    to: string;
 }
 
-export default function ButtonSubmit({label}: Props) {
+export default function ButtonSubmit({label, to}: Props) {
     return (
-        <div>
+        <Link to={to}>
             <button className="w-120 h-14 rounded-full bg-blue text-white font-bold cursor-pointer outline-gray">{label}</button>
-        </div>
+        </Link>
     )
 }
 
