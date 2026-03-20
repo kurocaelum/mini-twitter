@@ -1,7 +1,10 @@
+import { FaRegEnvelope, FaRegEye } from "react-icons/fa6";
 import ButtonSubmit from "./ButtonSubmit";
 import FormInput from "./FormInput";
 
 export default function LoginTabContent() {
+    const iconStyle = "w-6 h-6";
+    
     return (
         <div>
             <p className="font-bold text-blue text-[30px]">Olá, de novo!</p>
@@ -14,11 +17,13 @@ export default function LoginTabContent() {
                     label="E-mail"
                     inputType="email"
                     placeholder="Insira o seu e-mail"
+                    icon={<FaRegEnvelope className="w-6 h-6" />}
                 ></FormInput>
                 <FormInput
                     label="Senha"
                     inputType="password"
                     placeholder="Insira a sua senha"
+                    icon={<FaRegEye className={iconStyle} />}
                 ></FormInput>
 
                 <ButtonSubmit label="Continuar" to="/"></ButtonSubmit>
