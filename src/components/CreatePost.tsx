@@ -13,7 +13,7 @@ export default function CreatePost() {
                     placeholder="E aí, o que está rolando?"
                 ></textarea>
                 <div className="border-t border-blue-steel3 pt-3 flex justify-space-between">
-                    <FaRegImage className="size-8 text-blue mr-auto" />
+                    <FaRegImage className="size-8 text-blue mr-auto self-end" />
                     <button className="bg-blue text-white font-bold py-2 px-4 rounded-full cursor-pointer">
                         Postar
                     </button>
