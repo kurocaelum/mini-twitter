@@ -1,10 +1,10 @@
+import CreatePost from "./CreatePost";
+
 export default function PostContainer() {
     return (
-        <div className="w-full flex flex-1 flex-col items-center justify-between">
-            <div className="border border-blue w-160 h-full">
-                <p>Posts</p>
-                <p>Posts</p>
-                <p>Posts</p>
+        <div className="w-full flex flex-1 flex-col align-start items-center justify-between">
+            <div className="w-160 h-full mt-9 mb-11.5 flex flex-col align-start items-center gap-8">
+                <CreatePost />
             </div>
         </div>
     )
