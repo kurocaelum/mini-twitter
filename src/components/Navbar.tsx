@@ -1,30 +1,34 @@
-// import { FaSearch, FaSignOutAlt } from "react-icons/fa";
-
 import { FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
+
+// import { FaSearch, FaSignOutAlt } from "react-icons/fa";
 
 export default function Navbar() {
     return (
         <nav className="w-full px-10 py-3 flex items-center justify-between border-b bg-white2 border-blue-steel3">
             {/* Logo */}
-            <p className="text-blue font-bold text-[18px]">Mini Twitter</p>
+            <p className="text-blue font-bold text-[18px] w-80">Mini Twitter</p>
 
             {/* Search Input */}
-            <div className="flex items-center w-149.25 h-10 py-2 px-4 text-[14px] text-gray border rounded border-blue-steel3 bg-white outline-blue">
-                <FaSearch className="w-4.5 h-4.5" />
-                <input
-                    className="outline-none w-full ml-2 mr-2"
-                    type="text"
-                    placeholder="Buscar por post..."
-                />
+            <div className="flex flex-1 justify-center">
+                <div className="flex items-center w-119.5 h-10 py-2 px-4 text-[14px] text-gray border rounded border-blue-steel3 bg-white outline-blue">
+                    <FaSearch className="w-4.5 h-4.5" />
+                    <input
+                        className="outline-none w-full ml-2 mr-2"
+                        type="text"
+                        placeholder="Buscar por post..."
+                    />
+                </div>
             </div>
 
             {/* TODO conditional rendering entre icone signout e auth button group */}
             
             {/* TODO logout deve trocar o botão de logout pelos botões de login e registro */}
-            {/* <button className="rounded-full bg-blue text-white w-10 h-10 flex items-center justify-center cursor-pointer">
-                <FaSignOutAlt />
-            </button> */}
+            {/* <div className="w-80 flex justify-end">
+                <button className="rounded-full bg-blue text-white w-10 h-10 flex items-center justify-center cursor-pointer">
+                    <FaSignOutAlt />
+                </button>
+            </div> */}
 
             {/* TODO Botão registrar deve redirecionar pra /login com tab Cadastrar ativa */}
             <div className="w-80 h-10">

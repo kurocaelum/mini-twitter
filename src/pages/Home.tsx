@@ -1,6 +1,14 @@
+import FooterLogo from "../components/FooterLogo";
+import Navbar from "../components/Navbar";
+import PostContainer from "../components/PostContainer";
+
 export default function Home() {
     return (
-        <h1>Home</h1>
+        <div className="flex flex-col justify-between">
+            <Navbar />
+            <PostContainer />
+            <FooterLogo />
+        </div>
     )
 }
 
