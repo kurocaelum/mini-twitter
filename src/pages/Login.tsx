@@ -2,9 +2,14 @@ import { useState } from "react";
 import LoginTabButtons from "../components/LoginTabButtons";
 import LoginTabContent from "../components/LoginTabContent";
 import SignupTabContent from "../components/SignupTabContent";
+import { useSearchParams } from "react-router-dom";
 
 export default function Login() {
-    const [activeTab, setActiveTab] = useState(0);
+    // TODO toSignup como query param
+    const [searchParams] = useSearchParams();
+    const tab = searchParams.get("tab");
+    
+    const [activeTab, setActiveTab] = useState(tab === "signup" ? 1 : 0);
     let content;
 
     if (activeTab === 0) 
