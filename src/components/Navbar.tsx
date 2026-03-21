@@ -30,7 +30,6 @@ export default function Navbar() {
                 </button>
             </div> */}
 
-            {/* TODO Botão registrar deve redirecionar pra /login com tab Cadastrar ativa */}
             <div className="w-80 h-10">
                 <Link tabIndex={-1} to="/login?tab=signup">
                     <button className="w-39 h-10 mr-2 rounded-full border border-blue-steel3 bg-white text-gray font-bold cursor-pointer outline-gray">Registrar-se</button>
