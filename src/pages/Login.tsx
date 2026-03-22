@@ -5,7 +5,6 @@ import SignupTabContent from "../components/SignupTabContent";
 import { useSearchParams } from "react-router-dom";
 
 export default function Login() {
-    // TODO toSignup como query param
     const [searchParams] = useSearchParams();
     const tab = searchParams.get("tab");
     
@@ -19,9 +18,9 @@ export default function Login() {
     
 
     return  (
-        <div className="bg-white2 flex h-screen justify-center items-center">
+        <div className="bg-white2 dark:bg-dark-gradient flex h-screen justify-center items-center">
             <div className="w-120">
-                <p className="font-bold text-blue text-[40px] text-center mb-14">Mini Twitter</p>
+                <p className="font-bold text-blue dark:text-white text-[40px] text-center mb-14">Mini Twitter</p>
                 <LoginTabButtons activeTab={activeTab} setActiveTab={setActiveTab} />
                 {content}               
             </div>

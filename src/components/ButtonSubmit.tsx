@@ -8,7 +8,7 @@ interface Props {
 export default function ButtonSubmit({label, to}: Props) {
     return (
         <Link to={to} tabIndex={-1}>
-            <button className="w-120 h-14 rounded-full bg-blue text-white font-bold cursor-pointer outline-navy">{label}</button>
+            <button className="w-120 h-14 rounded-full bg-blue text-white shadow-lg shadow-blue/20 font-bold cursor-pointer outline-navy">{label}</button>
         </Link>
     )
 }

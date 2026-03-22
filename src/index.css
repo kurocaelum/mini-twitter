@@ -12,6 +12,7 @@
     --font-manrope: 'Manrope', sans-serif;
     --font-jakarta: 'Plus Jakarta Sans', sans-serif;
 
+    --color-black: #000000;
     --color-white: #FFFFFF;
     --color-white2: #FAFAFA;
     --color-blue: #0D93F2;
@@ -24,6 +25,12 @@
     --color-blue-steel3: #E2E8F0;
     --color-gray: #62748E;
     --color-gray2: #6E767D;
+    --color-gray-slate: #334155;
+    --color-gray-slate-light: #CBD5E1;
     --color-navy: #02274F;
+    --color-navy-dark: #0F172BCC;
+
     --color-red: #EB5757;
+
+     --background-image-dark-gradient: linear-gradient(116.82deg, #0F172B 0%, #070B14 100%);
 }

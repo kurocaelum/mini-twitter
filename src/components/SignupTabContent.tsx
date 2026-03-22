@@ -5,10 +5,10 @@ import FormInput from "./FormInput";
 export default function SignupTabContent() {
     return (
         <div>
-            <p className="font-bold text-blue text-[30px]">
+            <p className="font-bold text-blue dark:text-white2 text-[30px]">
                 Olá, vamos começar!
             </p>
-            <p className="text-[16px] text-gray mb-8">
+            <p className="text-[16px] text-gray dark:text-blue-steel mb-8">
                 Por favor, insira os dados solicitados para fazer cadastro.
             </p>
 
@@ -35,7 +35,7 @@ export default function SignupTabContent() {
                 <ButtonSubmit label="Continuar" to="/"></ButtonSubmit>
             </form>
 
-            <p className="mx-auto w-[320px] mt-10 text-[12px] text-navy text-center">
+            <p className="mx-auto w-[320px] mt-10 text-[12px] text-navy dark:text-blue-steel2 text-center">
                 Ao clicar em continuar, você concorda com nossos{" "}
                 <span className="underline cursor-pointer">
                     Termos de Serviço

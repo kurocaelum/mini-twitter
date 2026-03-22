@@ -18,11 +18,11 @@ export default function FormInput({
 
     return (
         <div className="mb-5">
-            <label className="text-[14px] text-gray" htmlFor={inputId}>
+            <label className="text-[14px] text-gray dark:text-white2" htmlFor={inputId}>
                 {label}
             </label>
             
-            <div className="mt-2 p-4 flex justify-between w-full text-[16px] text-gray border rounded-2xl border-blue-steel3 bg-white outline-blue">
+            <div className="mt-2 p-4 flex justify-between w-full text-[16px] text-gray border rounded-2xl border-blue-steel3 dark:border-gray bg-white dark:bg-blue-midnight3 outline-blue">
                 <input
                     id={inputId}
                     className="w-[90%] outline-none"
