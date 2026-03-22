@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
 
 @layer base {
     html {
@@ -9,7 +10,8 @@
 
 @theme {
     --font-manrope: 'Manrope', sans-serif;
-    
+    --font-jakarta: 'Plus Jakarta Sans', sans-serif;
+
     --color-white: #FFFFFF;
     --color-white2: #FAFAFA;
     --color-blue: #0D93F2;
