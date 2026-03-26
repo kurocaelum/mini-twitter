@@ -8,6 +8,7 @@ export default function PostContainer() {
             <div className="w-160 h-full mt-9 mb-11.5 flex flex-col align-start items-center gap-8">
                 <CreatePost />
                 <Post />
+                {/* <Post />
                 <Post />
                 <Post />
                 <Post />
@@ -15,8 +16,7 @@ export default function PostContainer() {
                 <Post />
                 <Post />
                 <Post />
-                <Post />
-                <Post />                
+                <Post />                 */}
             </div>
         </div>
     )
