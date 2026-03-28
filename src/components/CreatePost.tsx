@@ -2,7 +2,7 @@ import { FaRegImage } from "react-icons/fa";
 
 export default function CreatePost() {
     return (
-        <div className="bg-white dark:bg-blue-midnight3 border-blue-steel3 dark:border-gray border rounded-xl w-full h-41 flex flex-col items-start shadow-lg">
+        <div className="bg-white dark:bg-blue-midnight3 border-blue-steel3 dark:border-gray border rounded-xl w-full h-41 flex flex-col items-start shadow-lg mb-6">
             <div className="p-4 w-full">
                 <textarea
                     className="outline-none resize-none w-full h-18 pt-2 pb-9 px-3 overflow-clip text-[18px] text-gray dark:font-weight-500"
