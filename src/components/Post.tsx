@@ -1,18 +1,25 @@
 import { FaRegHeart } from "react-icons/fa";
+import type { PostType } from "../utils/types";
 
-export default function Post() {
-    const author = "Lucas Costa";
-    const emailShort = "lucascosta";
-    const createdAt = "15/02/2026";
-    const title = "Dark Mode is great!";
-    const content = "Loving the dark mode update on this app. It's so much easier on the eyes at night when I'm doomscrolling 😅. Anyone else feel the same?";
+interface PostProps {
+    post: PostType;
+}
+
+export default function Post({ post }: PostProps) {
+    const author = post.authorName;
+    // TODO pegar email do usuário e exibir só o nome de usuário (parte antes do @)
+    const emailShort = `@${post.authorName.toLowerCase()}`;
+    // TODO formatar para dd/mm/yyyy, sem hora
+    const createdAt = post.createdAt;
+    const title = post.title;
+    const content = post.content;
 
     return (
         <div className="flex flex-col items-start p-4 gap-3 w-full h-47.5 bg-white dark:bg-blue-midnight3 border border-blue-steel3 dark:border-gray rounded-xl">
             <div className="flex items-center gap-1.5 w-full h-6">
                 <p className="text-blue2 dark:text-white text-[16px] font-bold">{author}</p>
-                <p className="text-gray dark:text-gray2 text-[14px]">@{emailShort}</p>
-                <p className="text-gray dark:text-gray2 text-[14px]">-</p>
+                <p className="text-gray dark:text-gray2 text-[14px]">{emailShort}</p>
+                <p className="text-gray dark:text-gray2 text-[14px]">·</p>
                 <p className="text-gray dark:text-gray2 text-[14px]">{createdAt}</p>
             </div>
 
