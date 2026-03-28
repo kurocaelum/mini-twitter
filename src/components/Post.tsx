@@ -8,7 +8,7 @@ interface PostProps {
 export default function Post({ post }: PostProps) {
     const author = post.authorName;
     // TODO pegar email do usuário e exibir só o nome de usuário (parte antes do @)
-    const emailShort = `@${post.authorName.toLowerCase()}`;
+    const emailShort = `@${post.authorName.toLowerCase().split(" ")[0]}`;
     // TODO formatar para dd/mm/yyyy, sem hora
     const createdAt = post.createdAt;
     const title = post.title;
