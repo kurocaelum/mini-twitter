@@ -1,7 +1,7 @@
 import { useState } from "react";
-import LoginTabButtons from "../components/LoginTabButtons";
-import LoginTabContent from "../components/LoginTabContent";
-import SignupTabContent from "../components/SignupTabContent";
+import TabButtonGroup from "../components/TabButtonGroup";
+import LoginTabContent from "../layout/LoginTabContent";
+import SignupTabContent from "../layout/SignupTabContent";
 import { useSearchParams } from "react-router-dom";
 
 export default function Login() {
@@ -12,16 +12,16 @@ export default function Login() {
     let content;
 
     if (activeTab === 0) 
-        content = <LoginTabContent></LoginTabContent>;
+        content = <LoginTabContent />;
     else 
-        content = <SignupTabContent></SignupTabContent>;
+        content = <SignupTabContent />;
     
 
     return  (
         <div className="bg-white2 dark:bg-dark-gradient flex h-screen justify-center items-center">
             <div className="w-120">
                 <p className="font-bold text-blue dark:text-white text-[40px] text-center mb-14">Mini Twitter</p>
-                <LoginTabButtons activeTab={activeTab} setActiveTab={setActiveTab} />
+                <TabButtonGroup activeTab={activeTab} setActiveTab={setActiveTab} />
                 {content}               
             </div>
         </div>

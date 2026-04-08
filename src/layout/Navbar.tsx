@@ -1,6 +1,6 @@
 import { FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import Logo from "./Logo";
+import Logo from "../components/Logo";
 
 // import { FaSearch, FaSignOutAlt } from "react-icons/fa";
 

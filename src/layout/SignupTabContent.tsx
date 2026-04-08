@@ -1,30 +1,36 @@
-import { FaRegEnvelope, FaRegEye } from "react-icons/fa";
-import ButtonSubmit from "./ButtonSubmit";
-import FormInput from "./FormInput";
+import { FaRegEnvelope, FaRegEye, FaRegUser } from "react-icons/fa";
+import ButtonSubmit from "../components/ButtonSubmit";
+import FormInput from "../components/FormInput";
 
-export default function LoginTabContent() {
-    const iconStyle = "w-6 h-6";
-    
+export default function SignupTabContent() {
     return (
         <div>
-            <p className="font-bold text-blue dark:text-white2 text-[30px]">Olá, de novo!</p>
+            <p className="font-bold text-blue dark:text-white2 text-[30px]">
+                Olá, vamos começar!
+            </p>
             <p className="text-[16px] text-gray dark:text-blue-steel mb-8">
-                Por favor, insira os seus dados pra fazer login.
+                Por favor, insira os dados solicitados para fazer cadastro.
             </p>
 
             <form>
+                <FormInput
+                    label="Nome"
+                    inputType="text"
+                    placeholder="Insira o seu nome"
+                    icon={<FaRegUser className="w-6 h-6" />}
+                ></FormInput>
                 <FormInput
                     label="E-mail"
                     inputType="email"
                     placeholder="Insira o seu e-mail"
                     icon={<FaRegEnvelope className="w-6 h-6" />}
-                />
+                ></FormInput>
                 <FormInput
                     label="Senha"
                     inputType="password"
                     placeholder="Insira a sua senha"
-                    icon={<FaRegEye className={iconStyle} />}
-                />
+                    icon={<FaRegEye className="w-6 h-6" />}
+                ></FormInput>
 
                 <ButtonSubmit label="Continuar" to="/"></ButtonSubmit>
             </form>

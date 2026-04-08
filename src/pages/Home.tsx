@@ -1,6 +1,6 @@
-import FooterLogo from "../components/FooterLogo";
-import Navbar from "../components/Navbar";
-import PostContainer from "../components/PostContainer";
+import FooterLogo from "../layout/FooterLogo";
+import Navbar from "../layout/Navbar";
+import PostContainer from "../layout/PostContainer";
 
 export default function Home() {
 

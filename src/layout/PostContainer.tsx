@@ -1,8 +1,8 @@
 import { useQuery } from "@tanstack/react-query";
 import { getPosts } from "../services/postService";
 import type { PostResponseHttpData } from "../utils/types";
-import CreatePost from "./CreatePost";
-import Post from "./Post";
+import CreatePost from "../components/CreatePost";
+import Post from "../components/Post";
 
 // TODO post com imagem
 export default function PostContainer() {
