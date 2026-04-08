@@ -31,10 +31,10 @@ export default function Navbar() {
             </div> */}
 
             <div className="w-80 h-10">
-                <Link tabIndex={-1} to="/login?tab=signup">
+                <Link tabIndex={-1} to="/auth?tab=signup">
                     <button className="w-39 h-10 mr-2 rounded-full border border-blue-steel3 dark:border-gray bg-white dark:bg-navy-dark/80 text-gray dark:text-white font-bold cursor-pointer outline-gray shadow-lg shadow-blue/20">Registrar-se</button>
                 </Link>
-                <Link tabIndex={-1} to="/login">
+                <Link tabIndex={-1} to="/auth">
                     <button className="w-39 h-10 rounded-full bg-blue text-white font-bold cursor-pointer outline-blue2 shadow-lg shadow-blue/20">Login</button>
                 </Link>
             </div>

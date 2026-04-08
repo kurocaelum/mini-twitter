@@ -4,7 +4,7 @@ import LoginTabContent from "../layout/LoginTabContent";
 import SignupTabContent from "../layout/SignupTabContent";
 import { useSearchParams } from "react-router-dom";
 
-export default function Login() {
+export default function Auth() {
     const [searchParams] = useSearchParams();
     const tab = searchParams.get("tab");
     
