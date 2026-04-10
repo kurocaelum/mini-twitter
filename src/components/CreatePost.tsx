@@ -2,15 +2,22 @@ import { FaRegImage } from "react-icons/fa";
 
 export default function CreatePost() {
     return (
-        <div className="bg-white dark:bg-blue-midnight3 border-blue-steel3 dark:border-gray border rounded-xl w-full h-41 flex flex-col items-start shadow-lg mb-6">
+        <div className="bg-white dark:bg-blue-midnight3 border-blue-steel3 dark:border-gray border rounded-xl w-full h-48 flex flex-col items-start shadow-lg mb-6">
             <div className="p-4 w-full">
+                <input
+                    type="text"
+                    id="title"
+                    placeholder="Título"
+                    maxLength={50}
+                    className="w-full h-7 px-3 pt-2 pb-3 outline-none border-b border-blue-steel3 dark:border-gray/30 text-[18px] placeholder:text-gray dark:placeholder:text-gray text-blue2 dark:text-white font-bold"
+                />
                 <textarea
-                    className="outline-none resize-none w-full h-18 pt-2 pb-9 px-3 overflow-clip text-[18px] placeholder:text-gray dark:placeholder:text-gray text-blue2 dark:text-gray-slate-light dark:font-weight-500"
                     rows={2}
                     maxLength={116}
                     name="createPost"
                     id="createPost"
                     placeholder="E aí, o que está rolando?"
+                    className="outline-none resize-none w-full h-18 pt-2 pb-9 px-3 overflow-clip text-[18px] placeholder:text-gray dark:placeholder:text-gray text-blue2 dark:text-gray-slate-light dark:font-weight-500"
                 ></textarea>
                 <div className="border-t border-blue-steel3 dark:border-gray/30 pt-3 flex justify-space-between">
                     <FaRegImage className="size-8 text-blue mr-auto self-end cursor-pointer" />
