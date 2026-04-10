@@ -1,13 +1,17 @@
 import { FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Logo from "../components/Logo";
+import ThemeButton from "../components/ThemeButton";
 
 // import { FaSearch, FaSignOutAlt } from "react-icons/fa";
 
 export default function Navbar() {
     return (
         <nav className="w-full top-0 fixed backdrop-blur-md px-10 py-3 flex items-center justify-between border-b bg-white2 dark:bg-navy-dark/80 border-blue-steel3 dark:border-gray">
-            <Logo />
+            <div className="flex items-center w-80 gap-8">
+                <Logo />
+                <ThemeButton />
+            </div>
 
             {/* Search Input */}
             <div className="flex flex-1 justify-center">
