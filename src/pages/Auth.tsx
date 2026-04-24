@@ -3,8 +3,11 @@ import TabButtonGroup from "../components/TabButtonGroup";
 import LoginTabContent from "../layout/LoginTabContent";
 import SignupTabContent from "../layout/SignupTabContent";
 import { useSearchParams } from "react-router-dom";
+import { useTheme } from "../hooks/useTheme";
 
 export default function Auth() {
+    useTheme();
+    
     const [searchParams] = useSearchParams();
     const tab = searchParams.get("tab");
     
